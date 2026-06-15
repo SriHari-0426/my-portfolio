@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Srihari P S | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="universe"></div>
+
+  <header class="topbar">
+    <div class="brand">Srihari P S</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-glass" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">Chennai, India • Computer Science passout</p>
+        <h1>Srihari P S</h1>
+        <p class="tagline">Computer Science graduate with strong fundamentals in Data Structures, OOP, and Web Development. Passionate about writing clean, scalable code and building real-world AI solutions.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-stats section-card">
+        <div class="stat-block">
+          <span>Passout</span>
+          <strong>April 2026</strong>
+        </div>
+        <div class="stat-block">
+          <span>Specialty</span>
+          <strong>AI + Web Apps</strong>
+        </div>
+        <div class="stat-block">
+          <span>Focus</span>
+          <strong>Cybersecurity & Automation</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section-glass fade-in-up" id="about">
+      <div class="section-header">
+        <small>About Me</small>
+        <h2>Hi, I am Srihari — building intelligent experiences with code.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>I am a B.Sc. in Computer Science fresher passout in 2026. I specialize in integrating machine learning models into practical web applications and have a strong interest in cybersecurity. My work focuses on clean architecture, scalable systems, and immersive user experiences.</p>
+          <ul class="feature-list">
+            <li>AI automation and full-stack development</li>
+            <li>Gesture-based interfaces and computer vision</li>
+            <li>Secure web systems with modern design</li>
+          </ul>
+        </div>
+        <div class="about-highlights section-card">
+          <div class="highlight">
+            <span>Location</span>
+            <strong>Chennai, India</strong>
+          </div>
+          <div class="highlight">
+            <span>Experience</span>
+            <strong>Junior Software Intern</strong>
+          </div>
+          <div class="highlight">
+            <span>Company</span>
+            <strong>EGLE-HITECH</strong>
+          </div>
+          <div class="highlight">
+            <span>Core Strengths</span>
+            <strong>Python, ML, Automation</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section-glass fade-in-up" id="skills">
+      <div class="section-header">
+        <small>Skills</small>
+        <h2>Technical skills and tools I use daily.</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Languages</h3>
+          <p>Python, Java, JavaScript</p>
+        </div>
+        <div class="skill-card">
+          <h3>Web Dev</h3>
+          <p>HTML, CSS, React, Node.js</p>
+        </div>
+        <div class="skill-card">
+          <h3>Core CS</h3>
+          <p>DSA, OOP, DBMS, OS</p>
+        </div>
+        <div class="skill-card">
+          <h3>Tools</h3>
+          <p>MySQL, GitHub, VS Code</p>
+        </div>
+      </div>
+      <div class="skill-visualization section-card">
+        <div class="visual-header">
+          <div>
+            <small>Interactive Skill Graph</small>
+            <h3>Graph of my capabilities</h3>
+          </div>
+          <div class="skill-pill">Hover to explore</div>
+        </div>
+        <div class="skill-chart" id="skillChart">
+          <div class="skill-node node-ml">AI/ML</div>
+          <div class="skill-node node-web">Web</div>
+          <div class="skill-node node-cv">CV</div>
+          <div class="skill-node node-sec">Security</div>
+          <div class="skill-node node-db">Database</div>
+          <div class="skill-node node-code">Code</div>
+          <span class="skill-center">Srihari</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience section-glass fade-in-up" id="experience">
+      <div class="section-header">
+        <small>Experience</small>
+        <h2>Working at the intersection of AI and production-ready engineering.</h2>
+      </div>
+      <div class="experience-card section-card">
+        <div>
+          <h3>Junior Software Intern</h3>
+          <span>EGLE-HITECH, Kodampakkam, Chennai</span>
+        </div>
+        <p>Gained practical knowledge in AI, Python programming, data preprocessing, and ML algorithms. Supported small AI automation tasks while contributing to intelligent solutions and secure workflows.</p>
+      </div>
+    </section>
+
+    <section class="projects section-glass fade-in-up" id="projects">
+      <div class="section-header">
+        <small>Projects</small>
+        <h2>Selected AI and web projects with real-world impact.</h2>
+      </div>
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ai">AI/ML</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        <button class="filter-btn" data-filter="cv">Computer Vision</button>
+      </div>
+      <div class="project-grid" id="projectGrid">
+        <article class="project-card" data-category="ai cv fullstack">
+          <div class="project-head">
+            <span class="badge">Featured</span>
+            <h3>Adaptive ML Honeypot</h3>
+          </div>
+          <p>Local multimodal intelligence utilizing Ollama with Qwen2.5 and Moondream. Features YOLOv8 + MediaPipe for gesture-based touchless interactions, Python backend with multithreaded OS automation, ChromaDB memory, and Piper TTS.</p>
+          <div class="project-tags">
+            <span>AI</span>
+            <span>CV</span>
+            <span>Automation</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="ai fullstack">
+          <div class="project-head">
+            <span class="badge">AI Platform</span>
+            <h3>Citizen AI</h3>
+          </div>
+          <p>AI-driven interaction platform built with Flask, IBM Granite models, and IBM Watson. Uses NLP and sentiment analysis to track public concerns, complete with an analytics dashboard.</p>
+          <div class="project-tags">
+            <span>AI</span>
+            <span>Flask</span>
+            <span>Analytics</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section-glass fade-in-up" id="contact">
+      <div class="section-header">
+        <small>Contact</small>
+        <h2>Let's build something amazing together.</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-details section-card">
+          <h3>Get in touch</h3>
+          <p>Email: <a href="mailto:pssrihari2006@gmail.com">pssrihari2006@gmail.com</a></p>
+          <p>Phone: <a href="tel:+919361254890">+91 93612 54890</a></p>
+          <p>Location: Chennai, India</p>
+        </div>
+        <form class="contact-form section-card" id="contactForm">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="Your email" required />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" placeholder="Tell me about your project" rows="5" required></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-note">This form is styled for modern portfolios. Connect it to your backend for real submissions.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div class="chat-widget" id="chatWidget">
+    <button class="chat-toggle" id="chatToggle">Ask AI about Srihari</button>
+    <div class="chat-panel" id="chatPanel">
+      <div class="chat-header">
+        <div class="chat-title">Ask AI about Srihari</div>
+        <button class="close-chat" id="closeChat">×</button>
+      </div>
+      <div class="chat-body" id="chatBody">
+        <div class="message bot">Hello! Ask me anything about Srihari's AI projects, skills, or experience.</div>
+      </div>
+      <form class="chat-form" id="chatForm">
+        <input type="text" placeholder="Type your question..." required />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>Designed for bold portfolios • Built by Srihari P S • Chennai, India</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
